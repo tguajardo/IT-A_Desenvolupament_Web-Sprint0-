@@ -1,0 +1,24 @@
+# Comprimidos
+*.zip
+*.rar
+*.7z
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# Variables de entorno
+.env
+
+# Builds
+dist/
+build/
+
+# Logs
+*.log
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db
