@@ -1,0 +1,57 @@
+/*
+» Aplicar colors a l'encapçalament.
+» Afegir vores a la taula.
+» Centrar el text.
+» Augmentar l'espai interior de les cel·les.
+» Assignar classes a algunes files i donar-los un estil diferent.
+*/
+header {
+  background-color: #101b37;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+main {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  background-color: #d8e2ec;
+  color: #0e131b;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+table {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid navy;
+  padding: 2px;
+}
+th,
+td {
+  border: 1px solid navy;
+  padding: 2px;
+  text-align: center;
+}
+th {
+  background-color: #1d4ed8;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #c6c4c4;
+}
+tr:hover {
+  background-color: #ddd;
+}
+
+.introduccion {
+  background-color: rgb(232, 228, 228);
+  padding: 30px;
+  margin: 10px;
+}
+.carta {
+  background-color: rgb(246, 246, 233);
+  padding: 20px;
+  padding-bottom: 50px;
+  margin: 10px;
+}
