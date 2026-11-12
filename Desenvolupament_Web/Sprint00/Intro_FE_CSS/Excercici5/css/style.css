@@ -22,15 +22,9 @@ header img {
   border-radius: 50%;
   border: 2px solid blanchedalmond;
 }
-table {
-  width: 80%;
-  margin: 0 auto;
-  border: 1px solid navy;
-  padding: 2px;
-}
 
 main {
-  width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -41,24 +35,34 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.skills {
+.tarjetas {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: auto;
 }
-
-.proyectos {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
+.content {
+  max-width: 400px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  flex: 1 1 250px;
 }
-
 footer {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
   background-color: #101b37;
   color: white;
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Cambios para movil*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
 }
