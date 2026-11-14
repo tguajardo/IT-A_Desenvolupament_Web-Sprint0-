@@ -1,0 +1,54 @@
+/*
+» Afegir una capçalera amb color de fons.
+» Ajustar l'amplada de les imatges.
+» Arrodonir les cantonades de les imatges.
+» Afegir espai entre seccions.
+» Aplicar una paleta de colors coherent.
+*/
+
+header {
+  background-color: #1d4ed8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+body {
+  background-color: #d8e2ec;
+  color: #334155;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+main {
+  max-width: 60%;
+  margin: 0 auto;
+}
+h3 {
+  color: #1e3a8a;
+}
+
+section {
+  background-color: #ffffff;
+  margin: 20px 0;
+  padding: 20px;
+  margin: 10px;
+}
+
+article {
+  margin: 5px;
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5%;
+}
+.contenido {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: #f59e0b;
+  font-weight: bold;
+}

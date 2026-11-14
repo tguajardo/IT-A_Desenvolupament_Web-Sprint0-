@@ -1,0 +1,50 @@
+/*
+» Afegir un color de fons a cada secció.
+» Posar espais interiors i exteriors.
+» Afegir una vora a les llistes.
+» Ressaltar els títols.
+*/
+h1 {
+  color: darkblue;
+  font-weight: 800;
+}
+h3 {
+  font-weight: 800;
+}
+h4 {
+  font-weight: 800;
+}
+
+header {
+  color: royalblue;
+  padding: 3px;
+  margin: 3px;
+}
+
+body {
+  background-color: rgb(195, 192, 192);
+}
+
+.quien-soy {
+  color: rgb(20, 85, 37);
+  padding: 3px;
+  margin: 3px;
+}
+
+.que-me-gusta {
+  color: rgb(116, 6, 6);
+  padding: 3px;
+  margin: 3px;
+}
+.hobbies {
+  color: rgb(119, 17, 105);
+  padding: 3px;
+  margin: 3px;
+  border: 2px solid black;
+}
+.peliculas {
+  color: rgb(112, 120, 47);
+  padding: 3px;
+  margin: 3px;
+  border: 2px solid black;
+}

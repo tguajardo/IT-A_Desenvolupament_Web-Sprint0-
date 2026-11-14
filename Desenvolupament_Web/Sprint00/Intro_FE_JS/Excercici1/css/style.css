@@ -1,0 +1,20 @@
+/*
+» Canviar el color del títol principal.
+» Modificar el tipus de lletra.
+» Augmentar la mida del títol.
+» Canviar el color de fons de la pàgina.
+» Centrar el títol principal.
+ */
+
+body {
+  background-color: rgb(92, 181, 36);
+  font-family: monospace;
+  margin: 10px;
+}
+
+h1 {
+  color: navy;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}

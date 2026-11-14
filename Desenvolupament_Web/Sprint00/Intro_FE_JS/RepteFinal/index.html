@@ -1,0 +1,162 @@
+<!--
+Mini repte final: La web d'una acadèmia
+Crear una pàgina web per promocionar una acadèmia de programació.
+
+Requisits
+Ha de contenir:
+
+» Logotip
+» Descripció
+» Llista de cursos
+» Taula de preus
+» Formulari de contacte
+» Imatges
+» Enllaços
+-->
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Academy Web</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="title">
+        <h1>Code Academy BCN</h1>
+        <img src="images/logo.png" alt="Logo de la academia" width="300" />
+      </div>
+      <h4>
+        En Code Academy BCN formamos programadores desde nivel principiante hasta profesional.
+        Nuestros cursos combinan teoría, práctica y proyectos reales para facilitar la inserción
+        laboral en el sector tecnológico.
+      </h4>
+    </header>
+
+    <main>
+      <section id="cursos">
+        <h3>Lista de cursos</h3>
+        <ul>
+          <li>HTMLy CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>Base de datos SQL</li>
+          <li>Git y Github</li>
+        </ul>
+      </section>
+
+      <section id="precios">
+        <h3>Tabla de precios</h3>
+        <table>
+          <tr>
+            <th>Curso</th>
+            <th>Duración</th>
+            <th>Costo</th>
+          </tr>
+
+          <tr>
+            <td>HTML y CSS</td>
+            <td>4 semanas</td>
+            <td>150€</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>8 semanas</td>
+            <td>300€</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>8 semanas</td>
+            <td>400€</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>6 semanas</td>
+            <td>250€</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>10 semanas</td>
+            <td>500€</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="galeria">
+        <h3>Galeria de Imagenes</h3>
+        <div class="fotos">
+          <img src="Images/Sala.png" alt="Nuestros salas" width="200" />
+          <img src="Images/estudiantes.png" alt="Nuestros estudiantes" width="200" />
+          <img src="Images/programming.png" alt="Recursos" width="200" />
+          <img src="Images/clases.png" alt="Nuestros profesores" width="200" />
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h3>Contáctanos</h3>
+
+        <form action="mailto:info@codeacademy.cat">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
+          <br />
+
+          <label for="apellido">Apellidos:</label>
+          <input type="text" id="apellido" name="apellido" />
+          <br />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" />
+          <br />
+
+          <label for="curso">Curso de interés:</label>
+          <input list="cursos" id="curso" name="curso" />
+
+          <datalist id="cursos">
+            <option value="HTML y CSS"></option>
+            <option value="JavaScript"></option>
+            <option value="React"></option>
+            <option value="Python"></option>
+            <option value="Java"></option>
+          </datalist>
+          <br />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            cols="40"
+            placeholder="Explícanos en qué podemos ayudarte"
+          ></textarea>
+          <br />
+
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpiar" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <h3>Enlaces Utiles</h3>
+        <p>
+          <a href="https://github.com">GitHub</a>
+          <a href="https://linkedin.com">LinkedIn</a>
+          <a href="https://instagram.com">Instagram</a>
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
