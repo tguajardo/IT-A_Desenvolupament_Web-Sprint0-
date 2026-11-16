@@ -30,7 +30,8 @@ function showMessage() {
 const bgButton = document.getElementById('color-b');
 //Funcion que cambia el color
 function bgColorChange() {
-  if (document.body.style.backgroundColor == 'rgb(195, 192, 192)') {
+  let currentColor = getComputedStyle(document.body).backgroundColor;
+  if (currentColor == 'rgb(195, 192, 192)') {
     document.body.style.backgroundColor = 'rgb(188, 102, 102)';
   } else {
     document.body.style.backgroundColor = 'rgb(195, 192, 192)';
