@@ -7,9 +7,10 @@
  */
 
 body {
-  background-color: rgb(92, 181, 36);
+  background-color: rgb(162, 181, 150);
   font-family: monospace;
   margin: 10px;
+  text-align: center;
 }
 
 h1 {
