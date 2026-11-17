@@ -31,6 +31,9 @@ section {
   padding: 20px;
   margin: 10px;
 }
+section button {
+  align-items: center;
+}
 
 article {
   margin: 5px;

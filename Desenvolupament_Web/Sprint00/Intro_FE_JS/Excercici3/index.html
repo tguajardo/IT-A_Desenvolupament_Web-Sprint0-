@@ -22,11 +22,12 @@ Escull una ciutat i crea una pàgina amb:
   <body>
     <header>
       <h1>Santiago de Chile</h1>
+      <button id="toggleImg">Hide images</button>
     </header>
 
     <main>
       <section class="introduccion">
-        <h2>Introducción</h2>
+        <h2 id="title">Introducción</h2>
         <div class="contenido">
           <p>
             Santiago es la capital de Chile y el principal centro cultural, histórico y económico
@@ -38,7 +39,7 @@ Escull una ciutat i crea una pàgina amb:
         </div>
       </section>
 
-      <section class="lugares-interes">
+      <section class="lugares-interes" id="lg">
         <h2>Lugares de interés</h2>
 
         <article>
@@ -54,7 +55,7 @@ Escull una ciutat i crea una pàgina amb:
         </article>
 
         <article>
-          <h3>Palacio de La Moneda</h3>
+          <h3>Palacio de la Moneda</h3>
           <div class="contenido">
             <p>
               Es la sede del Gobierno de Chile y uno de los edificios más importantes del país.
@@ -74,6 +75,7 @@ Escull una ciutat i crea una pàgina amb:
             <img src="images/plaza_de_armas_santiago.jpg" alt="Plaza de Armas de Santiago" />
           </div>
         </article>
+        <button id="stgoSecret">Show secret</button>
       </section>
 
       <section class="web-interes">
@@ -83,5 +85,9 @@ Escull una ciutat i crea una pàgina amb:
         </p>
       </section>
     </main>
+    <script src="js/script.js"></script>
+    <script>
+      changeTitle();
+    </script>
   </body>
 </html>

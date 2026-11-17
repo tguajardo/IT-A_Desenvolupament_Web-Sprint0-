@@ -1,98 +1,49 @@
+<!--
+ Exercici 5:
+ Llista de tasques Requisits Permetre:
+ » Afegir tasques.
+ » Mostrar-les en pantalla.
+ » Eliminar una tasca.
+ » Mostrar quantes tasques hi ha.
+ Conceptes
+ » Arrays
+ » push()
+ » Bucles
+ » createElement()
+ » Events
+ -->
+
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <title>Personal Web</title>
+    <title>Task List</title>
   </head>
-
   <body>
-    <header>
-      <div class="header-text">
-        <h1>Tomás Guajardo</h1>
-        <h2>Electronic Engineer</h2>
-      </div>
-      <img src="images/Perfil.png" alt="Foto de Tomás Guajardo" width="200" />
-    </header>
-
+    <header><h1>Task List</h1></header>
     <main>
-      <section>
-        <h2>Sobre mí</h2>
-
-        <p>
-          Soy un ingeniero electrónico de Chile. Mi experiencia es principalmente como Project
-          Manager en proyectos de electrónica, programación de firmware y diseño de PCB.
-        </p>
-
-        <p>Actualmente estoy aprendiendo desarrollo web en IT Academy.</p>
+      <section id="add-remove-task">
+        <form id="add-task">
+          <label for="task">Task: </label>
+          <input type="text" id="task" name="task" />
+          <input type="submit" value="Add Task" />
+        </form>
+        <form id="remove-task">
+          <label for="id-task">ID Task(number): </label>
+          <input type="number" id="id-task" name="id-task" />
+          <input type="submit" value="Remove Task" />
+        </form>
+        <p id="mensajeConfirmacion"></p>
       </section>
-
-      <section>
-        <h2>Conocimientos</h2>
-        <div class="tarjetas">
-          <div class="content">
-            <h3>Habilidades Técnicas</h3>
-            <ul>
-              <li>C embebido (tiempo real, microcontroladores)</li>
-              <li>Diseño de PCB y esquemático</li>
-              <li>LoRaWAN, XBee, BLE, GPS y comunicaciones celulares</li>
-            </ul>
-          </div>
-          <div class="content">
-            <h3>Habilidades Blandas</h3>
-            <ul>
-              <li>Resiliencia al estrés</li>
-              <li>Comunicación con clientes</li>
-              <li>Trabajo en equipo</li>
-            </ul>
-          </div>
-        </div>
+      <section id="list">
+        <h4>Tasks to do</h4>
       </section>
-
-      <section>
-        <h2>Proyectos</h2>
-        <div class="tarjetas">
-          <div class="content">
-            <h3>Dispositivo IoT</h3>
-            <p>Sistema de monitoreo remoto con LoRaWAN.</p>
-            <p>2022</p>
-          </div>
-
-          <div class="content">
-            <h3>Tracker GPS</h3>
-            <p>Diseño y desarrollo de firmware para seguimiento.</p>
-            <p>2023</p>
-          </div>
-
-          <div class="content">
-            <h3>Portfolio Web</h3>
-            <p>Página personal desarrollada en HTML.</p>
-            <p>2026</p>
-          </div>
-        </div>
+      <section id="task-count">
+        <h5 id="total-tasks">Total tasks: 0</h5>
       </section>
     </main>
-
-    <footer>
-      <h2>Contacto</h2>
-      <div class="contactos">
-        <p class="contacto">
-          Correo:
-          <a href="mailto:tguajardo@gmail.com"> tguajardo@gmail.com </a>
-        </p>
-
-        <p class="contacto">
-          GitHub:
-          <a href="https://github.com/tguajardo"> github.com/tguajardo </a>
-        </p>
-
-        <p class="contacto">
-          LinkedIn:
-          <a href="https://es.linkedin.com/in/tguajardo"> linkedin.com/in/tguajardo </a>
-        </p>
-      </div>
-    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,10 +1,18 @@
-<!-- Exercici 4: Carta d'un restaurant Requisits Crea la carta d'un restaurant. Columnes La taula ha de
-tenir les següents columnes:
-Plat Descripció Preu
-Mínim » 5 plats. » 3 begudes. » 3 postres.
+<!--
+Mini repte final: La web d'una acadèmia
+Crear una pàgina web per promocionar una acadèmia de programació.
 
-Extra Afegeix una imatge del restaurant.
- -->
+Requisits
+Ha de contenir:
+
+» Logotip
+» Descripció
+» Llista de cursos
+» Taula de preus
+» Formulari de contacte
+» Imatges
+» Enllaços
+-->
 
 <!doctype html>
 <html lang="es">
@@ -12,138 +20,125 @@ Extra Afegeix una imatge del restaurant.
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Bar El Gimnasio</title>
+    <title>Academy Web</title>
   </head>
+
   <body>
+    <nav>
+      <ul>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
     <header>
-      <h1>Bar El Gimnasio</h1>
+      <div class="title">
+        <h1>Code Academy BCN</h1>
+        <img src="images/logo.png" alt="Logo de la academia" width="300" />
+      </div>
+      <h4>
+        En Code Academy BCN formamos programadores desde nivel principiante hasta profesional.
+        Nuestros cursos combinan teoría, práctica y proyectos reales para facilitar la inserción
+        laboral en el sector tecnológico.
+      </h4>
     </header>
 
     <main>
-      <section class="introduccion">
-        <h2>Nuestro Restaurante</h2>
-
-        <img src="images/Bar_El_Gimnasio.jpg" alt="Bar El Gimnasio" width="500" />
-
-        <p>Cualquier cosa usted fue al Gimnasio.</p>
+      <section id="cursos">
+        <h3>Lista de cursos</h3>
+        <ul>
+          <li>HTMLy CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>Base de datos SQL</li>
+          <li>Git y Github</li>
+        </ul>
       </section>
 
-      <section class="carta">
-        <h2>Carta</h2>
-        <section>
-        <h3>Carta comida</h3>
+      <section id="precios">
+        <h3>Tabla de precios</h3>
         <table>
-          <thead>
-            <tr>
-              <th>Plato</th>
-              <th>Descripción</th>
-              <th>Precio</th>
-            </tr>
-          </thead>
+          <tr>
+            <th>Curso</th>
+            <th>Duración</th>
+            <th>Costo</th>
+          </tr>
 
-          <tbody>
-            <tr>
-              <td>Hamburguesa Completa</td>
-              <td>Hamburguesa con queso, tomate y lechuga.</td>
-              <td>9,50 €</td>
-            </tr>
-
-            <tr>
-              <td>Pechuga a la Plancha</td>
-              <td>Pechuga de pollo con ensalada fresca.</td>
-              <td>10,50 €</td>
-            </tr>
-
-            <tr>
-              <td>Pasta Boloñesa</td>
-              <td>Pasta con salsa de tomate y carne.</td>
-              <td>8,90 €</td>
-            </tr>
-
-            <tr>
-              <td>Pizza Margarita</td>
-              <td>Pizza de mozzarella y tomate.</td>
-              <td>11,00 €</td>
-            </tr>
-
-            <tr>
-              <td>Sándwich Fitness</td>
-              <td>Pan integral con pollo y vegetales.</td>
-              <td>7,80 €</td>
-            </tr>
-          </tbody>
+          <tr>
+            <td>HTML y CSS</td>
+            <td>4 semanas</td>
+            <td>150€</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>8 semanas</td>
+            <td>300€</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>8 semanas</td>
+            <td>400€</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>6 semanas</td>
+            <td>250€</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>10 semanas</td>
+            <td>500€</td>
+          </tr>
         </table>
-        </section>
-        <section>
-        <h3>Carta Bebidas</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Bebida</th>
-              <th>Descripción</th>
-              <th>Precio</th>
-            </tr>
-          </thead>
+      </section>
 
-            <tr>
-              <td>Zumo de Cebada</td>
-              <td>
-                Bebida isotónica elaborada mediante un avanzado proceso de fermentación deportiva.
-              </td>
-              <td>2,50 €</td>
-            </tr>
+      <section id="galeria">
+        <h3>Galeria de Imagenes</h3>
+        <div class="fotos">
+          <img src="Images/Sala.png" alt="Nuestros salas" width="200" />
+          <img src="Images/estudiantes.png" alt="Nuestros estudiantes" width="200" />
+          <img src="Images/programming.png" alt="Recursos" width="200" />
+          <img src="Images/clases.png" alt="Nuestros profesores" width="200" />
+        </div>
+      </section>
 
-            <tr>
-              <td>Zumo de Cebada + Shot de Limón</td>
-              <td>
-                Versión cítrica de nuestro zumo estrella, ideal para quienes cuentan las calorías
-                del segundo vaso.
-              </td>
-              <td>3,00 €</td>
-            </tr>
-            <tr>
-              <td>Batido de Uva Madurada en Barrica</td>
-              <td>
-                Preparado antioxidante de color tinto que mejora las conversaciones y las
-                sobremesas.
-              </td>
-              <td>3,50 €</td>
-            </tr>
-          </tbody>
-        </table>
-        </section>
-        <section>
-        <h3>Carta Postres</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Postre</th>
-              <th>Descripción</th>
-              <th>Precio</th>
-            </tr>
-          </thead>
+      <section id="contacto">
+        <h3>Contáctanos</h3>
 
-            <tr>
-              <td>Tarta de Queso</td>
-              <td>Tarta casera con mermelada de frutos rojos.</td>
-              <td>4,50 €</td>
-            </tr>
+        <form id="contactForm">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
 
-            <tr>
-              <td>Helado Artesanal</td>
-              <td>Dos bolas de helado a elección.</td>
-              <td>3,50 €</td>
-            </tr>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" />
 
-            <tr>
-              <td>Brownie de Chocolate</td>
-              <td>Brownie acompañado de helado de vainilla.</td>
-              <td>4,80 €</td>
-            </tr>
-          </tbody>
-        </table>
-        </section>
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            placeholder="Explícanos en qué podemos ayudarte"
+          ></textarea>
+
+          <input type="submit" value="Enviar" />
+        </form>
+
+        <p id="mensajeConfirmacion"></p>
       </section>
     </main>
+    <footer>
+      <section>
+        <h3>Enlaces Utiles</h3>
+        <p>
+          <a href="https://github.com">GitHub</a>
+          <a href="https://linkedin.com">LinkedIn</a>
+          <a href="https://instagram.com">Instagram</a>
+        </p>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
