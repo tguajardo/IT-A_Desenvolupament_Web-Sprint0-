@@ -1,0 +1,240 @@
+<!--
+Mini repte final: La web d'una acadèmia
+Crear una pàgina web per promocionar una acadèmia de programació.
+
+Requisits
+Ha de contenir:
+
+» Logotip
+» Descripció
+» Llista de cursos
+» Taula de preus
+» Formulari de contacte
+» Imatges
+» Enllaços
+-->
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Academy Web</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="title">
+        <h1>Code Academy BCN</h1>
+        <img src="images/logo.png" alt="Logo de la academia" width="300" />
+      </div>
+      <h4>
+        En Code Academy BCN formamos programadores desde nivel principiante hasta profesional.
+        Nuestros cursos combinan teoría, práctica y proyectos reales para facilitar la inserción
+        laboral en el sector tecnológico.
+      </h4>
+    </header>
+
+    <main>
+      <section id="cursos">
+        <h3>Lista de cursos</h3>
+        <div class="cursos-containers">
+          <article class="container">
+            <div class="container-header">
+              <h4>HTML y CSS</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">
+              Aprende a crear y diseñar páginas web modernas utilizando HTML y CSS.
+            </p>
+          </article>
+
+          <article class="container">
+            <div class="container-header">
+              <h4>JavaScript</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">Añade interactividad y dinamismo a tus aplicaciones web.</p>
+          </article>
+
+          <article class="container">
+            <div class="container-header">
+              <h4>React</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">Desarrolla interfaces modernas basadas en componentes.</p>
+          </article>
+
+          <article class="container">
+            <div class="container-header">
+              <h4>Python</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">Programa aplicaciones, automatizaciones y análisis de datos.</p>
+          </article>
+
+          <article class="container">
+            <div class="container-header">
+              <h4>Java</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">Crea aplicaciones empresariales y multiplataforma.</p>
+          </article>
+
+          <article class="container">
+            <div class="container-header">
+              <h4>Base de Datos SQL</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">Gestiona y consulta información almacenada en bases de datos.</p>
+          </article>
+
+          <article class="container">
+            <div class="container-header">
+              <h4>Git y GitHub</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">Controla versiones y colabora en proyectos de software.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="precios">
+        <h3>Tabla de precios</h3>
+        <table>
+          <tr>
+            <th>Curso</th>
+            <th>Duración</th>
+            <th>Costo</th>
+          </tr>
+
+          <tr>
+            <td>HTML y CSS</td>
+            <td>4 semanas</td>
+            <td>150€</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>8 semanas</td>
+            <td>300€</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>8 semanas</td>
+            <td>400€</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>6 semanas</td>
+            <td>250€</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>10 semanas</td>
+            <td>500€</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="galeria">
+        <h3>Galeria de Imagenes</h3>
+        <div class="fotos">
+          <img src="Images/Sala.png" alt="Nuestros salas" width="200" />
+          <img src="Images/estudiantes.png" alt="Nuestros estudiantes" width="200" />
+          <img src="Images/programming.png" alt="Recursos" width="200" />
+          <img src="Images/clases.png" alt="Nuestros profesores" width="200" />
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h3>Contáctanos</h3>
+
+        <form id="contactForm">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            placeholder="Explícanos en qué podemos ayudarte"
+          ></textarea>
+
+          <input type="submit" value="Enviar" />
+        </form>
+
+        <p id="mensajeConfirmacion"></p>
+      </section>
+
+      <section id="faq">
+        <h3>Preguntas Frecuentes</h3>
+        <div class="faq-container">
+          <article class="container">
+            <div class="container-header">
+              <h4>¿Necesito experiencia previa para empezar?</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">
+              No. Disponemos de cursos para principiantes en los que aprenderás desde los conceptos
+              más básicos hasta desarrollar tus primeros proyectos.
+            </p>
+          </article>
+          <article class="container">
+            <div class="container-header">
+              <h4>¿Las clases son presenciales u online?</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">
+              Ofrecemos formación presencial en nuestras instalaciones y también modalidad online
+              para que puedas estudiar desde cualquier lugar.
+            </p>
+          </article>
+          <article class="container">
+            <div class="container-header">
+              <h4>¿Recibiré un certificado al finalizar?</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">
+              Sí. Al completar satisfactoriamente el curso recibirás un certificado de
+              aprovechamiento emitido por la academia.
+            </p>
+          </article>
+          <article class="container">
+            <div class="container-header">
+              <h4>¿Hay ayuda para encontrar empleo?</h4>
+              <button class="toggle-btn">+</button>
+            </div>
+            <p class="descripcion">
+              Sí. Te orientamos en la creación de tu portafolio, preparación de entrevistas técnicas
+              y búsqueda de oportunidades laborales en el sector tecnológico.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <h3>Enlaces Utiles</h3>
+        <p>
+          <a href="https://github.com">GitHub</a>
+          <a href="https://linkedin.com">LinkedIn</a>
+          <a href="https://instagram.com">Instagram</a>
+        </p>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

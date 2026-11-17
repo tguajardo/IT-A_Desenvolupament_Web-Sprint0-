@@ -1,0 +1,255 @@
+/*La web ha de tenir:
+
+» Barra de navegació.
+» Capçalera principal.
+» Seccions diferenciades.
+» Taules de preus.
+» Formulari de contacte.
+» Colors coherents.
+» Botons amb efectes hover.
+icona conceptes
+
+Conceptes treballats
+» Box Model
+» Flexbox
+» Pseudoclasses
+» Organització del CSS*/
+
+/* Estilo transversal a la web*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  color: black;
+  line-height: 1.5;
+}
+
+/*NAV*/
+
+nav {
+  background-color: darkblue;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* Estilo */
+
+header {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header img {
+  border-radius: 10px;
+}
+
+header h1 {
+  margin: 15px;
+}
+
+header h4 {
+  max-width: 800px;
+  margin: 20px auto;
+  font-weight: normal;
+}
+
+/* Estilo Secciones */
+
+section {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+section ul {
+  display: inline-block;
+  text-align: left;
+}
+section ul li {
+  margin: 2px;
+}
+section h3 {
+  color: blue;
+}
+/*Estilo cursos*/
+.cursos-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.faq-container {
+  display: flex;
+  flex-direction: column;
+}
+.faq-container .container {
+  flex: 1 1;
+  padding: 5px;
+}
+.container {
+  flex: 1 1 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.descripcion {
+  display: none;
+  margin-top: 10px;
+}
+
+.descripcion.activa {
+  display: block;
+}
+
+/*Estilo precios*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(177, 177, 177);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(226, 226, 226);
+}
+
+tr:hover {
+  background-color: rgb(182, 182, 182);
+}
+
+/*Tabla Galeria*/
+
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.fotos img {
+  border-radius: 10%;
+}
+.fotos img:hover {
+  transform: scale(1.05);
+}
+
+/*Estilo Formulario*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+input,
+textarea {
+  padding: 5px;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(10, 102, 194, 0.4);
+}
+
+input[type='submit'],
+input[type='reset'] {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover {
+  background-color: rgb(0, 0, 82);
+  transform: translateY(-2px);
+}
+
+/*Estilo Footer*/
+
+footer {
+  background-color: darkblue;
+  color: blue;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: rgb(0, 0, 200);
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: rgb(14, 67, 128);
+  font-weight: bold;
+}
