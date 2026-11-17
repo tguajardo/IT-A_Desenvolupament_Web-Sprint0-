@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Título */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: navy;
+}
+
+/* Secciones */
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularios */
+form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input[type='text'],
+input[type='number'] {
+  flex: 1;
+  min-width: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botones */
+input[type='submit'] {
+  background-color: navy;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: royalblue;
+}
+
+/* Mensajes */
+#mensajeConfirmacion {
+  font-weight: bold;
+  margin-top: 10px;
+  color: green;
+}
+
+/* Lista */
+#list h4 {
+  margin-bottom: 10px;
+}
+
+ol {
+  padding-left: 25px;
+}
+
+li {
+  padding: 2px;
+  margin-bottom: 2px;
+  background-color: #eef3ff;
+  border-left: 4px solid navy;
+  border-radius: 5px;
+}
+
+/* Contador */
+#task-count {
+  text-align: center;
+}
+
+#total-tasks {
+  color: navy;
+  font-size: 1.1rem;
+}

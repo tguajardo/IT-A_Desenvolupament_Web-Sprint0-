@@ -21,10 +21,10 @@ function updateList() {
   list.innerHTML = '';
   tasks.forEach((task) => {
     const li = document.createElement('li');
-    li.textContent = `${task}`;
+    li.textContent = task;
     list.appendChild(li);
-    section.appendChild(list);
   });
+  section.appendChild(list);
 }
 
 function updateCount() {
