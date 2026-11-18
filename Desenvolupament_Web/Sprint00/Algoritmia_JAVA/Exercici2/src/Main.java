@@ -1,3 +1,9 @@
+/* Determinar si una contrasenya:
+
+» Té almenys 8 caràcters.
+» Conté una majúscula.
+» Conté un número.
+Al finalitzar mostrar si la contrasenya és correcte o si no ho és, mostrar quines condicions no compleix. */
 import java.util.Scanner;
 
 public class Main {
@@ -33,7 +39,7 @@ public class Main {
             boolean badPwd = false;
             if (!hasValidLength(pwd)) {
                 badPwd = true;
-                System.out.println("El password no tiene el largo indicado.\nMinimo 8 caracteres");
+                System.out.println("El password no tiene el largo indicado.\nMinimo 8 caracteres.");
             }
             if (!hasUppercase(pwd)) {
                 badPwd = true;
