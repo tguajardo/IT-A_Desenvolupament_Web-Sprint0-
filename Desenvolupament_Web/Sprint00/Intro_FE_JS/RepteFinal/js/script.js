@@ -10,13 +10,14 @@ Tema clar/fosc
 Comptador
 » Mostrar el nombre total de cursos disponibles.
 */
-// TODO: Add dark mode
-// TODO: courses counter
+
 const form = document.getElementById('contactForm');
 const mensajeConfirmacion = document.getElementById('mensajeConfirmacion');
 const cursosBtns = document.querySelectorAll('#cursos .toggle-btn');
 const faqBtns = document.querySelectorAll('#faq .toggle-btn');
-const faqContainers = document.querySelectorAll('.faq-container .container');
+const faqContainers = document.querySelectorAll('#faq .container');
+const cursosCount = document.querySelectorAll('#cursos .container');
+const toggleBtn = document.getElementById('toggle-mode');
 
 // text + @ + text + . + at least 2 letters, no spaces
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -75,3 +76,19 @@ form.addEventListener('submit', function (event) {
   mensajeConfirmacion.textContent = `Información recibida correctamente.`;
   form.reset();
 });
+
+//agregar cantidad de cursos al titulo
+const h3Cursos = document.querySelector('#cursos h3');
+h3Cursos.textContent += ` (${cursosCount.length})`;
+
+//Theme selector
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  const mode = document.body.classList.contains('dark') ? 'dark' : 'light';
+  localStorage.setItem('theme', mode);
+});
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark');
+}
