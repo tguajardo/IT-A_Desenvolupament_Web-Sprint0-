@@ -57,9 +57,9 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
-        String pwd = getPwd();
-        System.out.println("Password = " + pwd);
-    }
+        public static void main(String[] args) {
+            String pwd = getPwd();
+            System.out.println("Password = " + pwd);
+        }
 }
 
