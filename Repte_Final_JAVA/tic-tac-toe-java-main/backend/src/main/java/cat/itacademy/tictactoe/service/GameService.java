@@ -57,6 +57,7 @@ public class GameService {
 
     // DONE: descriu que fa aquest mètode, perquè és públic i des d'on s'utilitza
     // Es publico ya que se usa fuera de la clase, GameController.playMove()
+    // El flujo del programa ocurre en este metodo, cuando el jugador realiza una jugada.
     public GameResponse playMove(MoveRequest moveRequest) {
         //GameController.playMove() recibe el http request de movimiento, pero lo pasa aca para realizar el movimiento.
         System.out.println("Service: processing player move row=" + moveRequest.getRow() + ", col=" + moveRequest.getCol());
@@ -116,9 +117,10 @@ public class GameService {
 
     // DONE: Descriu que fa aquest mètode, quin tipus de dada retorna,
     // Revisa si el movimiento es valido. Debe hacerse dentro del tablero y no debe haberse jugado con anterioridad.
+    // Acá se encontraba el bug ya que tenia solo return false, por tanto todas las jugadas eran invalidas.
     private boolean isValidMove(MoveRequest moveRequest) {
         return isInsideBoard(moveRequest.getRow(), moveRequest.getCol()) &&
-                board[moveRequest.getRow()][moveRequest.getCol()] == 0;
+                board[moveRequest.getRow()][moveRequest.getCol()] == EMPTY;
     }
 
     // DONE: Descriu que fa aquest mètode, quin tipus de dada retorna,
